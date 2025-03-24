@@ -1,0 +1,75 @@
+StackLayoutExample:
+
+<StackLayoutExample>:
+    Button:
+        text: "A"
+        size_hint: .25, .25
+    Button:
+        text: "A"
+        size_hint: .25, .25
+    Button:
+        text: "A"
+        size_hint: .25, .25
+    Button:
+        text: "A"
+        size_hint: .25, .25
+    Button:
+        text: "A"
+        size_hint: .25, .25
+
+<GridLayoutExample>:
+    cols: 4
+    Button:
+        text: 'A'
+    Button:
+        text: 'B'
+    Button:
+        text: 'C'
+    Button:
+        text: 'D'
+    Button:
+        text: 'E'
+    Button:
+        text: 'F'
+
+
+<AnchorLayoutExample>:
+    Button:
+        text: 'Abuga Derikku-san'
+        color: 0, 1, 1, 1
+        size_hint: .25, .10
+
+<BoxLayoutExample>:
+    orientation: 'vertical'
+    Button:
+        text: "Abuga"
+        color: 0, 1, 1, 1
+        size_hint: .5, 1
+        pos_hint: {"center_x": .5}
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: '10dp'
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+    Label:
+        text: "Carlton"
+        color: 1, 0, 1, 1
+
+<MainWidget>:
+    Button:
+        text: "Hello, World!"
+        size: "80dp", "60dp"
+        pos: "100dp", "100dp"
+        color: 1, 1, 0, 1
+    Label:
+        text: "Hello Derrick!"
+        size: "80dp", "60dp"
+        pos: "200dp", "200dp"
+        color: 0, 1, 1, 1
+        

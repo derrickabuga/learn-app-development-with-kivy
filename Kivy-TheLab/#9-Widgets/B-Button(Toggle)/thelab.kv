@@ -1,0 +1,91 @@
+WidgetsExample:
+
+<WidgetsExample>:
+    cols: 3
+    ToggleButton:
+        text: "OFF"
+        on_state: root.on_toggle_but_state(self)
+    Button:
+        text: 'Click Here'
+        on_press: root.on_but_click()
+        disabled: not root.can_count
+    Label:
+        text: root.my_text
+        font_name: "fonts/Lcd.ttf"
+        font_size: "90dp"
+        color: 0, 1, 1, 1
+
+<PageLayoutExample>:
+    MainWidget:
+    BoxLayoutExample:
+    AnchorLayoutExample:
+    GridLayoutExample:
+    ScrollViewExample:
+
+
+
+
+<ScrollViewExample>:
+    StackLayoutExample:
+        size_hint: 1, None
+        height: self.minimum_height
+
+<StackLayoutExample>:
+    
+
+<GridLayoutExample>:
+    cols: 4
+    Button:
+        text: 'A'
+    Button:
+        text: 'B'
+    Button:
+        text: 'C'
+    Button:
+        text: 'D'
+    Button:
+        text: 'E'
+    Button:
+        text: 'F'
+
+
+<AnchorLayoutExample>:
+    Button:
+        text: 'Abuga Derikku-san'
+        color: 0, 1, 1, 1
+        size_hint: .25, .10
+
+<BoxLayoutExample>:
+    orientation: 'vertical'
+    Button:
+        text: "Abuga"
+        color: 0, 1, 1, 1
+        size_hint: .5, 1
+        pos_hint: {"center_x": .5}
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: '10dp'
+        Button:
+            text: "B1"
+        Button:
+            text: "B2"
+        Button:
+            text: "B3"
+        Button:
+            text: "B4"
+    Label:
+        text: "Carlton"
+        color: 1, 0, 1, 1
+
+<MainWidget>:
+    Button:
+        text: "Hello, World!"
+        size: "80dp", "60dp"
+        pos: "100dp", "100dp"
+        color: 1, 1, 0, 1
+    Label:
+        text: "Hello Derrick!"
+        size: "80dp", "60dp"
+        pos: "200dp", "200dp"
+        color: 0, 1, 1, 1
+        

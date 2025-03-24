@@ -1,0 +1,37 @@
+In order to create a BoxLayout using Python, use the following syntax:
+
+------------
+*** CODE ***
+============
+from kivy.app import App
+from kivy.uix.widget import Widget
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
+
+
+#FOCUS BELOW
+#===========
+
+class BoxLayoutExample(BoxLayout):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.orientation = 'vertical'
+        first_button = Button(text="A")
+        second_button = Button(text="B")
+        third_button = Button(text="C")
+
+        self.add_widget(first_button)
+        self.add_widget(second_button)
+        self.add_widget(third_button)
+
+#===========
+#FOCUS ABOVE
+#===========
+
+class MainWidget(Widget):
+    pass
+
+class TheLabApp(App):
+    pass
+
+TheLabApp().run()

@@ -1,0 +1,14 @@
+**IMPORTANT THINGS TO NOTE!**
+=============================
+1. In your '.kv' file, in order to change the text
+color of a label or button, use the following syntax:
+    Button:
+        color: r, g, b, a
+        **where:
+        r, g, b, a are the red, green, blue, and alpha
+        values from 0 to 1 respectively**
+
+2. We use "dp" as the units for measurement when
+specifying button and label size as well as position
+**where dp stands for density-independent pixels**
+For example, 40 x 40dp is the size of a finger click.
