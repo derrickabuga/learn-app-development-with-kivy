@@ -49,6 +49,13 @@ class WidgetsExample(GridLayout):
             #ON
             toggle_button.text = "ON"
             self.can_count = True
+    
+    def on_switch_active(self, widget):
+        print("Switch: " + str(widget.active))
+
+    def on_slider_value(self, widget):
+        print("Slider value: " + str(int(widget.value)))
+        
 
 class GridLayoutExample(GridLayout):
     pass

@@ -14,6 +14,13 @@ WidgetsExample:
         font_name: "fonts/Lcd.ttf"
         font_size: "90dp"
         color: 0, 1, 1, 1
+    Switch:
+        on_active: root.on_switch_active(self)
+    Slider:
+        min: 0
+        max: 100
+        value: 50
+        on_value: root.on_slider_value(self)
 
 <PageLayoutExample>:
     MainWidget:
